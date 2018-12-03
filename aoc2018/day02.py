@@ -23,7 +23,7 @@ def part2(data):
         
 
 def main():
-    with load_data(day=2, part=1) as fp:
+    with load_data(day=2) as fp:
         data = readlines_(fp)
 
     print('Part 1: {}'.format(part1(data)))

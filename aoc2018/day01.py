@@ -20,7 +20,7 @@ def part2(data):
 
 
 def main():
-    with load_data(day=1, part=1) as fp:
+    with load_data(day=1) as fp:
         content = readlines_(fp)
 
     print(part1(content))   

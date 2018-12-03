@@ -6,7 +6,7 @@ from time import time
 
 
 @contextmanager
-def load_data(day: int, part: int):
+def load_data(day: int):
     """Read data from a given day
 
     Parameters
