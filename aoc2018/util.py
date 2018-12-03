@@ -13,20 +13,14 @@ def load_data(day: int, part: int):
     ----------
     day : int 
     
-    part : int 
-        whether to get part 1 (1) or part 2 (2)
-    
     Yields
     ------
     A pointer to the file
     """
     day_num = 'day' + '0' + str(day) if day < 10 else 'day' + str(day)
-    src_dir = join('../', 'inputs', day_num)
+    src_dir = join('../', 'inputs', day_num + '.txt')
 
-    assert part in (1, 2), 'Part argument must be 1 or 2'
-    fname = 'p{}.txt'.format(part)
-
-    fp = open(join(src_dir, fname), 'r')
+    fp = open(src_dir, 'r')
     yield fp
     fp.close()
 
